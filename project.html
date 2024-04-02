@@ -28,6 +28,9 @@
       display: block;
       width: 36%;
       margin: 34px auto;
+      top: 34px;
+      border: 3px solid black;
+      border-radius: 8px;
     }
     .right {
       display: inline-block;
@@ -41,9 +44,10 @@
     .navbar li {
       display: inline-block;
       font-size: 25px;
+      padding: 8px;
     }
     .navbar li a {
-      color: white;
+      color: black;
       text-decoration: none;
       padding: 0px;
       display: inline-block;
@@ -65,6 +69,33 @@
       color: red;
       background-color: black;
     }
+    .container {
+      border: 2px solid yellowgreen;
+      margin: 80px 150px;
+      padding: 2px 22px;
+      width: 45%;
+      border-radius: 8px;
+    }
+    .form-group input {
+      text-align: center;
+      display: block;
+      width: 508px;
+      padding: 1px;
+      font-size: 25px;
+      border-radius: 8px;
+      margin: 2px;
+    }
+    .container h1 {
+      text-align: center;
+    }
+    .container button {
+      display: block;
+      width: 34%;
+      margin: 2px 165px;
+    }
+    .container h1{
+      color: black;
+    }
   </style>
   <body>
     <header class="header">
@@ -85,5 +116,23 @@
         <button class="btn">email us</button>
       </div>
     </header>
+    <div class="container">
+      <h1>JOIN THE BEST KARATE CLASSES EVER</h1>
+      <form action="noaction.php">
+        <div class="form-group">
+          <input type="text" name="" placeholder="ENTER YOUR NAME" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="ENTER YOUR NUMBER" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="ENTER YOUR GENDER" />
+        </div>
+        <div class="form-group">
+          <input type="text" name="" placeholder="ENTER YOUR AGE" />
+        </div>
+        <button class="btn">SUBMIT</button>
+      </form>
+    </div>
   </body>
 </html>
