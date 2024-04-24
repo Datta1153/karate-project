@@ -1,0 +1,187 @@
+/* css reset */
+* {
+  margin: 0;
+  padding: 0;
+}
+/* css variables */
+:root {
+  --navbar-height: 59px;
+}
+/* navigation bar */
+#navbar {
+  display: flex;
+  align-items: center;
+  position: relative;
+  top: 0px;
+}
+/* navigation bar::logo and image  */
+#logo {
+  margin: 10px 34px;
+}
+#logo img {
+  height: 59px;
+  margin: 3px 6px;
+}
+/* navigation bar:list styling */
+#navbar {
+  position: relative;
+}
+#navbar ul {
+  display: flex;
+
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+#navbar::before {
+  content: "";
+  top: 0px;
+  left: 0px;
+
+  background-color: black;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 0.4;
+}
+#navbar ul li {
+  list-style: none;
+  font-size: 1.9rem;
+  .jersey-25-regular {
+    font-family: "Jersey 25", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
+#navbar ul li a {
+  color: black;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+#navbar ul li a:hover {
+  color: black;
+  background-color: white;
+  display: block;
+  padding: 3px 22px;
+  border-radius: 20px;
+  text-decoration: none;
+}
+/* home section */
+#home {
+  display: flex;
+  flex-direction: column;
+  padding: 3px 200px;
+  height: 578px;
+  justify-content: center;
+  align-items: center;
+}
+#home::before {
+  content: "";
+  background: url("../html/good_food-wallpaper-1920x1280.jpg");
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  top: 0px;
+  left: 0px;
+  opacity: 0.89;
+}
+#home h1 {
+  color: black;
+  text-align: center;
+
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+#home p {
+  color: black;
+  text-align: center;
+  font-size: 1.5rem;
+
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* services section */
+#services {
+  margin: 34px;
+  display: flex;
+}
+#services .box {
+  border: 2px solid rgb(48, 48, 48);
+  padding: 34px;
+  margin: 3px 6px;
+  border-radius: 28px;
+  background-color: rgb(238, 237, 237);
+}
+#services .box img {
+  height: 160px;
+  margin: auto;
+  display: block;
+}
+#services .box p {
+  font-family: "Righteous", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+/* client section */
+#client-section {
+  
+}
+#clients {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#clients img{
+ height: 124px;
+ width: 250px;
+
+padding: 35px;
+
+
+}
+
+
+/* utility classes */
+
+.h-primary {
+  font-size: 3.8rem;
+  padding: 12px;
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.h-secondary {
+  font-size: 2.3rem;
+  padding: 12px;
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.btn {
+  padding: 6px 20px;
+  border: 2px solid white;
+  background-color: rgb(68, 68, 68);
+  color: white;
+  margin: 17px;
+  font-size: 1.5rem;
+  border-radius: 10px;
+  cursor: pointer;
+
+  font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.btn:hover {
+  background-color: black;
+  color: white;
+}
+.center {
+  text-align: center;
+}
