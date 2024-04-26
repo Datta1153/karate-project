@@ -3,6 +3,9 @@
   margin: 0;
   padding: 0;
 }
+html{
+  scroll-behavior: smooth;
+}
 /* css variables */
 :root {
   --navbar-height: 59px;
@@ -11,7 +14,7 @@
 #navbar {
   display: flex;
   align-items: center;
-  position: relative;
+  position: sticky;
   top: 0px;
 }
 /* navigation bar::logo and image  */
@@ -115,7 +118,7 @@
 #services .box {
   border: 2px solid rgb(48, 48, 48);
   padding: 34px;
-  margin: 3px 6px;
+  margin: 25px 6px;
   border-radius: 28px;
   background-color: rgb(238, 237, 237);
 }
@@ -131,22 +134,33 @@
 }
 /* client section */
 #client-section {
+
+  position: relative;
+}
+#client-section::before {
+  content: "";
+  position: absolute;
+  background: url("../html/cheeses-1146823_960_720.jpg");
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+  opacity: 0.6;
   
 }
+
 #clients {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-#clients img{
- height: 124px;
- width: 250px;
-
-padding: 35px;
-
-
+.client-item {
+  padding: 34px;
 }
-
+#clients img {
+  height: 124px;
+  width: 250px;
+  padding: 35px;
+}
 
 /* utility classes */
 
